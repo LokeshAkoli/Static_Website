@@ -1,41 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Embedding Example</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My First Webpage</h1>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>This is a brief introduction about myself.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>My Projects</h2>
-        <p>Here are some of the projects I've worked on.</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me at myemail@example.com.</p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 My First Webpage</p>
-    </footer>
+
+  <!-- Image -->
+  <h2>Image Example</h2>
+  <img src="https://www.easetext.com/assets/img/tutorial/jpg-to-text.jpg" alt="Sample Image" width="500" height="300">
+
+  <!-- Video -->
+  <h2>Video Example</h2>
+  <video width="640" height="360" controls>
+    <source src="https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcT5sASXGMqdc1Hr-P1t87mCqRpcHF5O6cEo4g" type="video/mp4">
+    <source src="https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcT5sASXGMqdc1Hr-P1t87mCqRpcHF5O6cEo4g" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Audio -->
+  <h2>Audio Example</h2>
+  <audio controls>
+    <source src="path/to/audio.mp3" type="audio/mp3">
+    <source src="path/to/audio.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- PDF -->
+  <h2>PDF Example</h2>
+  <embed src="C:\Users\Admin" width="600" height="400" type="application/pdf">
+  
 </body>
 </html>
