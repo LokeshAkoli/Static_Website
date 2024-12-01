@@ -1,66 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylsheet" href"styles.css">
+    <title> My Website </title>
+<style>
+  header{
+    background-color: #333;
+    color:red;
+    padding:10px 20px;
+  }
+  header h1{
+    margin:0 ;
+    font-size: 24px;
+    display : inline-block;
+  }
+  nav{
+    float: right;
+  }
+  nav a{
+    color: white;
+    margin:  16px;
+    font-size: 20px;
+    text-decoration: none;
+    
+  }
+  nav a:hover{
+    background-color: red;
+  }
+.img-content{
+  width: 100%;
+  height: 500px;
+  overflow:hidden;
+  position : relative;
+}
+.main-content{
+  display:flex;
+  padding: 10px;
+  
+}
+.main-content div{
+  width:50%;
+  padding:15px;
+  box-sizing: border-box;
+}
+.left{
+  background-color: aqua;
+}
+.rigth{
+background-color: orange;
+}
+footer{
+  background-color: #333;
+  color:white;
+  text-align: center;
+  position:relative;
+  bottom:0;
+  padding:5px;
+  
+}
+  
+</style>
+
+
 </head>
 <body>
-    <header>
-        <title>Website</title>
-    </header>
+  <header>
+      <h1><I>MY SIMPLE WEBSITE</I></h1>  
+   <nav>
+       <a href="Task.html">Home</a>
+       <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+       <a href="services.html">Secvices</a> 
+   </nav>
+  </header>
+  <div class="img-content">
+    <img src="file.jpg">
+  </div>
+    
+    <div class="main-content">
+      <div class="left">
+      <h2>Web Development</h2>
+      <p>Start your journey in web development with simple and clean design concepts.</p>
+      </div>
 
-    <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#about">About Us</a></li>
-        </ul>
-    </nav>
-
-    <!-- Home Page Section -->
-    <section id="home">
-        <h1>Welcome to Our Website</h1>
-        <p>Discover amazing content and explore our website!</p>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <p>Check out our amazing collection of photos!</p>
-        <!-- Add your images here -->
-    </section>
-
-    <!-- Contact Us Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions, feel free to reach out!</p>
-        <form>
-            <label for="name">Your Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="email">Your Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="message">Your Message:</label><br>
-            <textarea id="message" name="message" required></textarea><br><br>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a team of passionate individuals working towards creating the best website for you!</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Your Website. All Rights Reserved.</p>
-    </footer>
-
+    <div class="rigth">
+        <h2>Web Development</h2>
+          <p>Start your journey in web development with simple and clean design concepts.</p>
+    </div>
+  </div>
+  <footer>
+    <p> &copy; 2024 My Simple Website.</p>
+  </footer>
 </body>
+
 </html>
